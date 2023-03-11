@@ -64,3 +64,20 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+var bellotaIconAlhendin = L.icon({
+    iconUrl: "assets/logoBellotaTrimmed.png",
+    iconSize: [38, 45],
+    iconAnchor: [19, 44],
+    popupAnchor: [-3, -76],
+});
+
+var bellotaIconDonJuan = L.icon({
+    iconUrl: "assets/logoBellotaTrimmed.png",
+    iconSize: [38, 45],
+    iconAnchor: [19, 44],
+    popupAnchor: [-3, -76],
+});
+
+L.marker([37.062, -3.38], {icon: bellotaIconAlhendin}).addTo(map);
+L.marker([42.173, -5.31], {icon: bellotaIconAlhendin}).addTo(map);
