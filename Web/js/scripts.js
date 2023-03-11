@@ -57,3 +57,10 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+var map = L.map('map').setView([40.463, -3.74], 6);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
