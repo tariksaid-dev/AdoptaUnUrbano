@@ -11814,6 +11814,47 @@ header.masthead .h1 {
   }
 }
 
+
+header.mast-anfitrion {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url("../assets/img/bg-masthead2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.mast-anfitrion h1,
+header.mast-anfitrion .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  header.mast-anfitrion {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.mast-anfitrion p {
+    font-size: 1.15rem;
+  }
+  header.mast-anfitrion h1,
+  header.mast-anfitrion .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.mast-anfitrion h1,
+  header.mast-anfitrion .h1 {
+    font-size: 3.5rem;
+  }
+}
+
 #portfolio .container-fluid,
 #portfolio .container-sm,
 #portfolio .container-md,
@@ -12101,4 +12142,34 @@ header.masthead .h1 {
 .section-map-right {
   grid-column: 8 / 13;
 
+}
+
+/* Anfitrión */
+
+.container-anfitrion {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  color: white;
+
+}
+
+.container-anfitrion-text {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 5rem;
+  background-color: rgba(52, 46, 233, 0.5);
+}
+
+.container-anfitrion-text h1 {
+  padding-bottom: 1rem;
 }
