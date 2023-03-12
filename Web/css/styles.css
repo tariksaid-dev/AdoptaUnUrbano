@@ -11948,8 +11948,7 @@ header.masthead .h1 {
   justify-items: center;
   align-items: center;
   gap: 10px;
-  padding: 10px 20px;
-  border-bottom: 1px solid grey;
+  padding: 1% 2%;
 }
 
 .customsize {
@@ -11983,20 +11982,16 @@ header.masthead .h1 {
   justify-content: center;
   align-content: center;
 
-  border: 1px solid black;
 }
 
 .cabecera-left {
-  border: 1px solid black;
   display: flex;
+  width: 100%;
   padding: 1rem 5rem;
   flex-direction: column;
+  color: white;
 }
 
-.section-map-right {
-  grid-column: 8 / 13;
-
-}
 
 .oferta-section {
   display: grid;
@@ -12007,7 +12002,7 @@ header.masthead .h1 {
   align-content: center;
   gap: 5px;
   padding: 1rem;
-  border: 1px solid black;
+  border-bottom: 1px solid grey;
 }
 
 .oferta-imagen {
@@ -12054,16 +12049,28 @@ header.masthead .h1 {
   display: flex;
   flex-direction: column;
   margin: auto auto;
+  padding: 0 3%;
   
 }
 
 .servicios {
-  border: 1px solid black;
+  margin-top: 1rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .servicios-img {
   display: flex;
   justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+.servicios-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .servicios-buttons {
@@ -12085,5 +12092,13 @@ header.masthead .h1 {
 .test {
   width: 100%;
   height: 100%;
-  /* background-color: #066173; */
+  position: fixed !important;
+  top: 6vh;
+  height: 94vh;
+
+}
+
+.section-map-right {
+  grid-column: 8 / 13;
+
 }

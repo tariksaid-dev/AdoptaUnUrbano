@@ -37,6 +37,8 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
          <!-- Make sure you put this AFTER Leaflet's CSS --> 
          <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+         <!-- FontAwesome -->
+         <script src="https://kit.fontawesome.com/0497757aab.js" crossorigin="anonymous"></script>
     </head>
     <body class="pag-busca-pueblos">
     
@@ -101,32 +103,33 @@
             </div>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle customColor" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                    Provincia
+                    Servicios
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><button class="dropdown-item" type="button">Granada</button></li>
-                    <li><button class="dropdown-item" type="button">Málaga</button></li>
-                    <li><button class="dropdown-item" type="button">Jaén</button></li>
+                    <li><button class="dropdown-item" type="button">Escuela</button></li>
+                    <li><button class="dropdown-item" type="button">Centro de salud</button></li>
+                    <li><button class="dropdown-item" type="button">Transporte público</button></li>
+                    <li><button class="dropdown-item" type="button">Biblioteca</button></li>
                 </ul>
             </div>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle customColor" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                    Provincia
+                    Habitantes
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><button class="dropdown-item" type="button">Granada</button></li>
-                    <li><button class="dropdown-item" type="button">Málaga</button></li>
-                    <li><button class="dropdown-item" type="button">Jaén</button></li>
+                    <li><button class="dropdown-item" type="button">Menos de 1000 habitantes</button></li>
+                    <li><button class="dropdown-item" type="button">Entre 1000 y 5000</button></li>
+                    <li><button class="dropdown-item" type="button">Entre 5000 y 15000</button></li>
+                    <li><button class="dropdown-item" type="button">Más de 15000</button></li>
                 </ul>
             </div>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle customColor" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                    Provincia
+                    Estancia
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><button class="dropdown-item" type="button">Granada</button></li>
-                    <li><button class="dropdown-item" type="button">Málaga</button></li>
-                    <li><button class="dropdown-item" type="button">Jaén</button></li>
+                    <li><button class="dropdown-item" type="button">Temporal</button></li>
+                    <li><button class="dropdown-item" type="button">Permanente</button></li>
                 </ul>
             </div>
         </div>
@@ -136,7 +139,7 @@
         <div class="section-menu-left">
 
             <!-- Cabecera -->
-            <div class="cabecera-left">
+            <div class="cabecera-left customColor">
                 <h2>Pueblos que ofrecen viviendas/alojamiento en España</h2>
                 <p>27 alojamientos permanentes, 12 temporales</p>
             </div>
@@ -144,13 +147,13 @@
             <!-- Seccion oferta 1 -->
             <div class="oferta-section">
                 <div class="oferta-imagen">
-                    <img src="assets/img/bg-masthead.jpg" alt="">
+                    <img src="assets/img/pueblos/alhendin1.jpg" alt="">
                 </div>
                 <div class="oferta-imagen-small1">
-                    <img src="assets/img/bg-masthead.jpg" alt="">
+                    <img src="assets/img/pueblos/alhendin2.jpg" alt="">
                 </div>
                 <div class="oferta-imagen-small2">
-                    <img src="assets/img/bg-masthead.jpg" alt="">
+                    <img src="assets/img/pueblos/alhendin3.jpg" alt="">
                 </div>
                 <div class="oferta-texto">
                     <h3>Alhendín, Granada</h3>
@@ -158,11 +161,22 @@
                     <p>Servicios disponibles:</p>
                     <div class="servicios">
                         <div class="servicios-img">
-                            <i class="bi-house-door fs-1 text-primary"></i>
-                            <i class="bi-house-door fs-1 text-primary"></i>
-                            <i class="bi-house-door fs-1 text-primary"></i>
-                            <i class="bi-house-door fs-1 text-primary"></i>
-                            <i class="bi-house-door fs-1 text-primary"></i>
+                            <div class="servicios-inner">
+                                <i class="fa-solid fa-house fs-1 text-primary"></i>
+                                Vivienda
+                            </div>
+                            <div class="servicios-inner">
+                                <i class="fa-solid fa-school fs-1 text-primary"></i>
+                                Colegio
+                            </div>
+                            <div class="servicios-inner">
+                                <i class="fa-regular fa-hospital fs-1 text-primary"></i>
+                                Centro de salud
+                            </div>
+                            <div class="servicios-inner">
+                                <i class="fa-solid fa-water-ladder fs-1 text-primary"></i>
+                                Piscina
+                            </div>
                         </div>
                         <div class="servicios-buttons">
                             <div class="servicios-boton customColor">
@@ -182,25 +196,36 @@
             </div>
             <div class="oferta-section">
                 <div class="oferta-imagen">
-                    <img src="assets/img/bg-masthead.jpg" alt="">
+                    <img src="assets/img/pueblos/donjuan1.jpg" alt="">
                 </div>
                 <div class="oferta-imagen-small1">
-                    <img src="assets/img/bg-masthead.jpg" alt="">
+                    <img src="assets/img/pueblos/donjuan2.jpg" alt="">
                 </div>
                 <div class="oferta-imagen-small2">
-                    <img src="assets/img/bg-masthead.jpg" alt="">
+                    <img src="assets/img/pueblos/donjuan3.jpg" alt="">
                 </div>
                 <div class="oferta-texto">
                     <h3>Valencia de Don Juan, León</h3>
-                    <p>Maravilloso pueblo de asturias con 1892 habitantes. Si buscas tranquilidad y solecito, este es tu sitio.</p>
+                    <p>Fantástico pueblo de asturias con ~ 6000 habitantes. Sitio magnífico para comer, con buen clima y mucha tranquilidad.</p>
                     <p>Servicios disponibles:</p>
                     <div class="servicios">
                         <div class="servicios-img">
-                            <i class="bi-house-door fs-1 text-primary"></i>
-                            <i class="bi-house-door fs-1 text-primary"></i>
-                            <i class="bi-house-door fs-1 text-primary"></i>
-                            <i class="bi-house-door fs-1 text-primary"></i>
-                            <i class="bi-house-door fs-1 text-primary"></i>
+                            <div class="servicios-inner">
+                                <i class="fa-solid fa-house fs-1 text-primary"></i>
+                                Vivienda
+                            </div>
+                            <div class="servicios-inner">
+                                <i class="fa-solid fa-school fs-1 text-primary"></i>
+                                Colegio
+                            </div>
+                            <div class="servicios-inner">
+                                <i class="fa-regular fa-hospital fs-1 text-primary"></i>
+                                Centro de salud
+                            </div>
+                            <div class="servicios-inner">
+                                <i class="fa-solid fa-water-ladder fs-1 text-primary"></i>
+                                Piscina
+                            </div>
                         </div>
                         <div class="servicios-buttons">
                             <div class="servicios-boton customColor">
