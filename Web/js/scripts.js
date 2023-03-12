@@ -81,3 +81,9 @@ var bellotaIconDonJuan = L.icon({
 
 L.marker([37.062, -3.38], {icon: bellotaIconAlhendin}).addTo(map);
 L.marker([42.173, -5.31], {icon: bellotaIconAlhendin}).addTo(map);
+L.marker([38.062, -4.38], {icon: bellotaIconAlhendin}).addTo(map);
+L.marker([37.062, -3.38], {icon: bellotaIconAlhendin}).addTo(map);
+L.marker([36.562, -5.38], {icon: bellotaIconAlhendin}).addTo(map);
+L.marker([41.062, -5.38], {icon: bellotaIconAlhendin}).addTo(map);
+L.marker([42.062, -2.38], {icon: bellotaIconAlhendin}).addTo(map);
+L.marker([39.762, -1.78], {icon: bellotaIconAlhendin}).addTo(map);
